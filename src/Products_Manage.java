@@ -34,13 +34,7 @@ public class Products_Manage {
 			break;}}
 	// Sort
 
-public void sortProductsByPrice() {
-    ProductList.sort(new Comparator<products>() {
-        @Override
-        public int compare(products p1, products p2) {
-            return Double.compare(p1.getPrice(), p2.getPrice());
-        }
-    });
+
 }
 				
 				
@@ -54,4 +48,4 @@ public void sortProductsByPrice() {
 	
 	
 
-}
+
