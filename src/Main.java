@@ -28,7 +28,38 @@ public class Main {
         // Tìm kiếm sản phẩm theo khoảng giá
         System.out.println("Tìm kiếm sản phẩm theo khoảng giá:");
         productManager.searchProductsByPriceRange(1121200, 212121200);
-    }
+        // dang nhap 
+        import java.util.HashMap;
+import java.util.Scanner;
+
+public class Login {
+	public static void main(String[] args) {
+		// nhap tai khoan
+		System.out.println("Moi nhap tai khoan");
+		Scanner sc = new Scanner(System.in);
+		String username = sc.nextLine();
+		System.out.println("Moi nhap mat khau");
+		String pass = sc.nextLine();
+		HashMap<String, String> user = new HashMap<String, String>();
+		// gia su user da dang ky truoc do
+		user.put("buiducviet", "Buiducviet");
+		user.put("bdv", "buiducviettttt");
+		user.put("viet", "khongnhopass");
+		// ktra
+		if (user.containsKey(username)==false) {
+			System.out.println("User khong ton tai");}
+		else if (user.get(username).equals(pass)==false) {
+			System.out.println("sai mat khau");
+			
+		}
+		else System.out.println("Ban da dang nhap thanh cong");
+		
+		
+		
+	}
+
 }
+
+    
 
 
